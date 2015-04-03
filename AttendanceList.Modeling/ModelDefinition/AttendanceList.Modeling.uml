@@ -1,0 +1,731 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="f6b0ecf0-6cb1-4980-a834-69409b3b7434"
+  name="AttendanceList.Modeling" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <ownedCommentsInternal>
+    <comment
+      Id="ddab4b35-4766-4f28-b3ae-8734a5e23452">
+      <body>Has students?</body>
+      <annotatedElements>
+        <decisionNodeMoniker
+          Id="cbaf3d10-5b61-4090-a7a3-5c9f2ef6a737"
+          LastKnownName="Check students"
+          LastKnownLocation="AttendanceList.Modeling.uml" />
+      </annotatedElements>
+    </comment>
+  </ownedCommentsInternal>
+  <appliedStereotypesInternal>
+    <stereotypeInstance
+      Id="6d4d23bb-6263-4eb5-8b5e-020e62828840"
+      name="namespace"
+      profile="CSharpProfile">
+      <propertyInstances>
+        <stereotypeInstanceHasPropertyInstances
+          Id="1c7353a2-ffee-4f68-b858-f65cee982eb2">
+          <propertyInstance
+            Id="cc51142e-9a8a-43ce-a498-9a2355fc4961"
+            name="BaseName" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances
+          Id="17a81fc0-7ea6-4a47-acb5-ae052103de4c">
+          <propertyInstance
+            Id="4da61fbc-344d-40e6-aad5-4cb724e0d3ac"
+            name="ClrAttributes" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances
+          Id="617a92e4-ab5c-41f1-a6d7-40620064f768">
+          <propertyInstance
+            Id="977d0a3e-587f-4d38-8c6a-b8d8cfde8e00"
+            name="Usings" />
+        </stereotypeInstanceHasPropertyInstances>
+      </propertyInstances>
+    </stereotypeInstance>
+    <stereotypeInstance
+      Id="b70fe1f8-8c01-4b3b-8d75-57706d5f86d8"
+      name="TextTemplateBindings"
+      profile="TextTemplateBindings">
+      <propertyInstances>
+        <stereotypeInstanceHasPropertyInstances
+          Id="37219b4a-e3aa-4f48-bfaf-235e3413dc8f">
+          <propertyInstance
+            Id="3a3270ae-1655-42ea-801e-3c744c8562b6"
+            name="Alias"
+            value="ClassTemplate|EnumTemplate|InterfaceTemplate|StructTemplate" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances
+          Id="c5115e89-fbfe-4376-b921-527926d2381d">
+          <propertyInstance
+            Id="5e7021ac-cc04-49fe-8c41-b79e2f095d7e"
+            name="TemplateFilePath"
+            value="ClassTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4|EnumTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\EnumTemplate.t4|InterfaceTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\InterfaceTemplate.t4|StructTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances
+          Id="73574d49-8f99-4b02-8a20-2d14ca51506b">
+          <propertyInstance
+            Id="02baaff7-6914-4723-8fa6-7e52a005ae00"
+            name="ProjectPath"
+            value="ClassTemplate=..\AttendanceList.ModelingLib\AttendanceList.ModelingLib.csproj|EnumTemplate=..\AttendanceList.ModelingLib\AttendanceList.ModelingLib.csproj|InterfaceTemplate=..\AttendanceList.ModelingLib\AttendanceList.ModelingLib.csproj|StructTemplate=..\AttendanceList.ModelingLib\AttendanceList.ModelingLib.csproj" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances
+          Id="01753a4b-b259-4c97-9837-20f929359627">
+          <propertyInstance
+            Id="f432aa78-39ea-40b8-b7ed-71a41f692551"
+            name="TargetDirectory"
+            value="ClassTemplate=GeneratedCode\{PackageStructure}|EnumTemplate=GeneratedCode\{PackageStructure}|InterfaceTemplate=GeneratedCode\{PackageStructure}|StructTemplate=GeneratedCode\{PackageStructure}" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances
+          Id="de661d33-1d64-48e1-816a-3561832cfe19">
+          <propertyInstance
+            Id="a1b8c567-f080-4173-8d56-64b42f2d437c"
+            name="TargetName"
+            value="ClassTemplate={Name}|EnumTemplate={Name}|InterfaceTemplate={Name}|StructTemplate={Name}" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances
+          Id="7e879af3-04ac-4799-b069-e6ccc4c9e925">
+          <propertyInstance
+            Id="a443736d-0443-4c31-8437-c03c3dfecef8"
+            name="Overwrite"
+            value="ClassTemplate=True|EnumTemplate=True|InterfaceTemplate=True|StructTemplate=True" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances
+          Id="bd1ebfdb-3827-4000-8db4-f384b08a1283">
+          <propertyInstance
+            Id="6b0097e5-60ef-475b-b699-3968ef6b70ef"
+            name="Parameters" />
+        </stereotypeInstanceHasPropertyInstances>
+      </propertyInstances>
+    </stereotypeInstance>
+  </appliedStereotypesInternal>
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="31bce557-0386-41e8-8fea-67b9e2894a86">
+      <profileInstance
+        Id="4a3bf87b-fc89-4dcd-af73-addc1c5414e4"
+        name="CSharpProfile" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="f40f86b1-63b8-4658-9e5d-4ac29bbb4a86">
+      <profileInstance
+        Id="5f13e7a2-e43f-4685-b16a-10673ef94ffa"
+        name="TextTemplateBindings" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="5aae071c-3ecd-46d6-94c2-208e0ea7c0ae"
+        name="Student"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="4f2c8d95-b03a-4b7f-b49c-d0103f125e34"
+            name="FirstName"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="e92f3051-fa33-47e4-b627-9df359cec41f"
+            name="LastName"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="d980f496-b713-4488-84cd-1887d1192903"
+            name="Id"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="69b444f1-720e-455a-8573-94b01f576757"
+            name="MidScore"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="5ff8ccac-74cc-42c5-bf33-44c1f7eaad52"
+            name="FinalScore"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="425629e8-6b88-4b7c-bec9-84d641f1dc89"
+            name="AddStudent"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="27c36bce-675c-4129-9d4f-99957b621bd3"
+                  name="student"
+                  direction="In">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="5aae071c-3ecd-46d6-94c2-208e0ea7c0ae"
+                      LastKnownName="Student"
+                      LastKnownLocation="AttendanceList.Modeling.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="681de81a-9900-44f3-b4fe-f23f71ff8bee"
+            name="HasStudent"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="c6a6db84-cb20-41f7-8470-904c257dfe78"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                      LastKnownName="Boolean"
+                      LastKnownLocation="AttendanceList.Modeling.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="5e619981-d7f8-4f98-9b8d-796ee2588b9d"
+            name="GetStudents"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="26bc4bad-c5ac-4ad6-b831-ba11d90fe37a"
+                  direction="Return">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="39bb9f52-2ea9-4503-b940-8be5f1146b8d"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="e4cd9aa1-d485-4c7a-9956-fb5de2f7d490"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="5aae071c-3ecd-46d6-94c2-208e0ea7c0ae"
+                      LastKnownName="Student"
+                      LastKnownLocation="AttendanceList.Modeling.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="fdeb0205-842d-4ae9-b859-4ffd4655dd23"
+        name="Teacher"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="a29b0aff-0db6-4db3-9ab2-d9fb92b48615"
+            isDerived="false"
+            sourceEndRoleName="Teacher"
+            targetEndRoleName="Add student"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="bb60ce56-4466-42f5-9c7f-1b58b8b63c54"
+              LastKnownName="Add student"
+              LastKnownLocation="AttendanceList.Modeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a52203f3-f64a-4412-837a-2f99360d000b"
+                  name="Teacher"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9aeff536-a75c-494c-95af-631d86974de0"
+                  name="Add student"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="3206bc01-04bb-4263-b69c-dc8e33398d4a"
+            isDerived="false"
+            sourceEndRoleName="Teacher"
+            targetEndRoleName="View list"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="8aac462d-8bdf-4a2e-9290-4c8a91486289"
+              LastKnownName="View list"
+              LastKnownLocation="AttendanceList.Modeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2484f9e0-802b-4aec-86f9-45bd6da1872e"
+                  name="Teacher"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f88cc8d4-cf25-4106-b667-69b5e954e6ae"
+                  name="View list"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="0c5a715b-cbb5-4f97-8ddf-bb0fa3adc858"
+            isDerived="false"
+            sourceEndRoleName="Teacher"
+            targetEndRoleName="Check List"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="1824fa7c-df4b-4157-bd48-64cbd0f60a3f"
+              LastKnownName="Attendance checking"
+              LastKnownLocation="AttendanceList.Modeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="35d399e9-70ba-4bab-9ac3-f130eece3452"
+                  name="Teacher"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="42949ade-c98f-418c-a87a-5e4c38659b8b"
+                  name="Check List"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="bb60ce56-4466-42f5-9c7f-1b58b8b63c54"
+        name="Add student"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="8aac462d-8bdf-4a2e-9290-4c8a91486289"
+        name="View list"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="1824fa7c-df4b-4157-bd48-64cbd0f60a3f"
+        name="Attendance checking"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <activity
+        Id="8c7afe0b-a896-4d7b-8424-15694c48564f"
+        name="Main"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false">
+        <nodes>
+          <initialNode
+            Id="8464ebff-eb32-4ef1-9947-b493a480a1d7"
+            name="Initial1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="c11ec555-3e9b-4515-9844-800ed19490b8"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="cbaf3d10-5b61-4090-a7a3-5c9f2ef6a737"
+                  LastKnownName="Check students"
+                  LastKnownLocation="AttendanceList.Modeling.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <decisionNode
+            Id="cbaf3d10-5b61-4090-a7a3-5c9f2ef6a737"
+            name="Check students"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="06a38bdb-704f-40ae-9185-b2c0edb409b2"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="c34c260c-6f38-4c02-94cf-18e3272b89b8"
+                  LastKnownName="Add students"
+                  LastKnownLocation="AttendanceList.Modeling.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="31e4fde5-0f89-4111-a443-a50a5a00e079"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="ccdbb1f0-4a28-44ff-86c1-d7c1fdd00a5d"
+                  LastKnownName="Show list"
+                  LastKnownLocation="AttendanceList.Modeling.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction
+            Id="ccdbb1f0-4a28-44ff-86c1-d7c1fdd00a5d"
+            name="Show list"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="0edf3b75-9442-4cac-b4f3-4144f5d46f43"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="96a58138-07ed-4dc7-b433-e272b5b1a30d"
+                  LastKnownName="Start new week"
+                  LastKnownLocation="AttendanceList.Modeling.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="19f1491a-dae8-4291-958a-edb015d0289f"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="d222c4d0-8e56-4062-a125-3e1ed735d290"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="AttendanceList.Modeling.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="c34c260c-6f38-4c02-94cf-18e3272b89b8"
+            name="Add students"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="5ea2758b-6cdb-4bf1-b571-f4bcd6f06ae7"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="ccdbb1f0-4a28-44ff-86c1-d7c1fdd00a5d"
+                  LastKnownName="Show list"
+                  LastKnownLocation="AttendanceList.Modeling.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="96a58138-07ed-4dc7-b433-e272b5b1a30d"
+            name="Start new week"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="000dd862-cb72-449c-bf0c-50619f7db037"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="ccdbb1f0-4a28-44ff-86c1-d7c1fdd00a5d"
+                  LastKnownName="Show list"
+                  LastKnownLocation="AttendanceList.Modeling.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode
+            Id="d222c4d0-8e56-4062-a125-3e1ed735d290"
+            name="ActivityFinal1"
+            isLeaf="false" />
+        </nodes>
+      </activity>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="930871ff-339f-49ca-91ce-e65fbcce1309"
+        name="List"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="aee190f8-8b63-48ff-b964-49fc2e5f33cb"
+        name="Week"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="6f91e697-32fb-43a1-9f04-1b4d28a364ea"
+            name="Number"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="AttendanceList.Modeling.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="cb9a3756-7a3a-4262-b0c0-ea9b5cd7555a"
+            name="AbsentStudents"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <lowerValueInternal>
+              <literalString
+                Id="696e7214-6e9d-4ff4-8562-112118671a99"
+                name="Lower"
+                value="*" />
+            </lowerValueInternal>
+            <upperValueInternal>
+              <literalString
+                Id="6a992282-f3d4-4119-9dc6-fdb2ef28813a"
+                name="Upper"
+                value="*" />
+            </upperValueInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="5aae071c-3ecd-46d6-94c2-208e0ea7c0ae"
+                LastKnownName="Student"
+                LastKnownLocation="AttendanceList.Modeling.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="5a66e7a0-aa97-4de8-b45d-5f9e16188869"
+            name="TotalWeeks"
+            isLeaf="false"
+            isStatic="true"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="AttendanceList.Modeling.uml" />
+            </type_NamedElement>
+            <defaultValue>
+              <literalInteger
+                Id="6d000311-aadb-4968-9a51-3e8448157f55"
+                name="DefaultValue"
+                value="16" />
+            </defaultValue>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="fe65f322-442b-4d4d-bffb-433ca902425d"
+            name="GetWeeks"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="d7c4748f-fc3c-47fc-a553-9025b63b02c0"
+                  direction="Return"
+                  isUnique="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="bc10f6d3-0163-4351-8c71-3eca6b9aeb75"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="a3a15629-7265-4d8d-9686-0c3ebe1e8312"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="aee190f8-8b63-48ff-b964-49fc2e5f33cb"
+                      LastKnownName="Week"
+                      LastKnownLocation="AttendanceList.Modeling.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="1cc4849c-cd64-4e67-8396-e175449bfa43"
+            name="AddWeek"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="accdad52-b752-4698-abb8-6d6305f74cd3"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="aee190f8-8b63-48ff-b964-49fc2e5f33cb"
+                      LastKnownName="Week"
+                      LastKnownLocation="AttendanceList.Modeling.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="736808ee-6c41-4972-815e-8ab8142b8b18"
+            name="GetNextWeekNumber"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="c50048f4-cd1a-47e1-9e15-4de40498d1b7"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="AttendanceList.Modeling.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>

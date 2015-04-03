@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="9125bd91-825a-4930-b125-880611117e20" name="Main" linkedPackageId="c88ddc7e-890d-4da6-9875-b10561ff84e0" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="13af1400-430a-4e4c-a6df-f9babfc970ad" name="Teacher" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="fdeb0205-842d-4ae9-b859-4ffd4655dd23" />
+        <targetEnds>
+          <association Id="f6e8e80b-7ae4-4534-8c51-036991ba7ab8" isDerived="false" sourceEndRoleName="Teacher" targetEndRoleName="Add student" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="64f48773-0923-4156-b244-82393966e3d3" LastKnownName="Add student" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="000e6dae-a8bb-4bf4-93f0-c1b3745b2e7e" name="Teacher" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="a52203f3-f64a-4412-837a-2f99360d000b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="594a387d-6bc0-4fb3-9eca-1ee1dc0afc90" name="Add student" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="9aeff536-a75c-494c-95af-631d86974de0" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="a29b0aff-0db6-4db3-9ab2-d9fb92b48615" />
+          </association>
+          <association Id="35fea662-1393-4afd-8269-0947b8e1c44b" isDerived="false" sourceEndRoleName="Teacher" targetEndRoleName="View list" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="e2af3f13-11d3-45d7-84ef-b73fe0e20916" LastKnownName="View list" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="00aba89f-d71f-444e-b272-fd27059a862c" name="Teacher" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="2484f9e0-802b-4aec-86f9-45bd6da1872e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="bba378d3-9be4-4158-b760-de2f9243a13a" name="View list" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="f88cc8d4-cf25-4106-b667-69b5e954e6ae" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="3206bc01-04bb-4263-b69c-dc8e33398d4a" />
+          </association>
+          <association Id="67f31fc1-7c5e-4b67-a089-5659d41128f2" isDerived="false" sourceEndRoleName="Teacher" targetEndRoleName="Check List" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="aa905443-86b3-453c-b46c-a90b71dbaa1f" LastKnownName="Attendance checking" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b95f0812-bb8a-451e-8a7c-f8eab653a16d" name="Teacher" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="35d399e9-70ba-4bab-9ac3-f130eece3452" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b827d118-bab2-48e4-94a0-88c7a8084bb7" name="Check List" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="42949ade-c98f-418c-a87a-5e4c38659b8b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="0c5a715b-cbb5-4f97-8ddf-bb0fa3adc858" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="64f48773-0923-4156-b244-82393966e3d3" name="Add student" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="bb60ce56-4466-42f5-9c7f-1b58b8b63c54" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="e2af3f13-11d3-45d7-84ef-b73fe0e20916" name="View list" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="8aac462d-8bdf-4a2e-9290-4c8a91486289" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="aa905443-86b3-453c-b46c-a90b71dbaa1f" name="Attendance checking" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="1824fa7c-df4b-4157-bd48-64cbd0f60a3f" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="c88ddc7e-890d-4da6-9875-b10561ff84e0" name="AttendanceList.Modeling">
+    <elementDefinition Id="f6b0ecf0-6cb1-4980-a834-69409b3b7434" />
+    <profileInstances>
+      <packageHasProfileInstances Id="83c975b1-f7d1-4b7b-b013-323a07d07c14">
+        <profileInstance Id="7428cff9-5f8d-4ed8-ac17-b73167fa6e87" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="10e77671-223b-4013-aefc-a8d95e7417b4">
+        <profileInstance Id="2143adf9-7f15-4f01-8d64-3403cc3ea154" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</useCaseModelRoot>

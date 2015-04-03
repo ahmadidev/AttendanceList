@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{fffe7b53-c38e-4457-a151-69f898f7c11d}</ProjectGuid>
+    <ArchitectureToolsVersion>2.0.0.0</ArchitectureToolsVersion>
+    <Name>AttendanceList.Modeling</Name>
+    <RootNamespace>AttendanceList.Modeling</RootNamespace>
+    <SccProjectName>
+    </SccProjectName>
+    <SccProvider>
+    </SccProvider>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccLocalPath>
+    </SccLocalPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" Condition="'$(VSToolsPath)' != ''" />
+  <ItemGroup>
+    <Content Include="UI\Main.pptx">
+      <SubType>Content</SubType>
+    </Content>
+    <Folder Include="ModelDefinition\" />
+    <Content Include="Main.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Main.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Main.activitydiagram</DependentUpon>
+    </Content>
+    <Content Include="Logic.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Logic.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Logic.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="Main.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Main.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Main.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="ModelDefinition\AttendanceList.Modeling.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Folder Include="UI" />
+  </ItemGroup>
+  <ItemGroup>
+    <Validate Include="Main.layerdiagram">
+      <SubType>Content</SubType>
+    </Validate>
+    <Validate Include="Main.layerdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Main.layerdiagram</DependentUpon>
+    </Validate>
+    <Validate Include="Main.layerdiagram.suppressions">
+      <SubType>Content</SubType>
+      <DependentUpon>Main.layerdiagram</DependentUpon>
+    </Validate>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AttendanceList.Logic\AttendanceList.Logic.vcxproj">
+      <Name>AttendanceList.Logic</Name>
+      <Project>{8862c7ec-818c-42a1-9ed8-fbae8503827b}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\AttendanceList.Presentation\AttendanceList.Presentation.vcxproj">
+      <Name>AttendanceList.Presentation</Name>
+      <Project>{df9d6a4d-111a-437d-9d20-24f694c9d768}</Project>
+    </ProjectReference>
+  </ItemGroup>
+</Project>

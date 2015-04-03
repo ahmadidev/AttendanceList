@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="3d7922b0-ecd0-42ad-8534-6a053f120619" name="Main" linkedPackageId="7777e621-8bc3-479a-a796-5573c3910caa" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <ownedCommentsInternal>
+    <comment Id="0d326a7c-0d80-49aa-9b1e-1c3816d8b433">
+      <elementDefinition Id="ddab4b35-4766-4f28-b3ae-8734a5e23452" />
+      <body>Has students?</body>
+      <annotatedElements>
+        <decisionNodeMoniker Id="c331bc5a-4f7f-486a-b6df-7a7609a012d3" LastKnownName="Check students" />
+      </annotatedElements>
+    </comment>
+  </ownedCommentsInternal>
+  <profileInstances>
+    <packageHasProfileInstances Id="56845733-fe9b-4754-921f-8fe0ea6b9fed">
+      <profileInstance Id="f600e063-c52c-41f6-8e06-5b745c4e76b3" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="dc769d3f-bfad-4c06-a3d8-9cd0f8b41d98">
+      <profileInstance Id="d81bddfb-1340-46b2-88a3-f3cd081a122f" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="7f913a50-fd25-43b4-9a40-f89b776d2966" name="Main" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="8c7afe0b-a896-4d7b-8424-15694c48564f" />
+        <nodes>
+          <initialNode Id="13efba5e-0430-4821-9e6b-28313d438217" name="Initial1" isLeaf="false">
+            <elementDefinition Id="8464ebff-eb32-4ef1-9947-b493a480a1d7" />
+            <flowNodeTargets>
+              <controlFlow Id="1c2976cb-77c0-48b1-883c-39e606c5fe84" isLeaf="false">
+                <decisionNodeMoniker Id="c331bc5a-4f7f-486a-b6df-7a7609a012d3" LastKnownName="Check students" />
+                <elementDefinition Id="c11ec555-3e9b-4515-9844-800ed19490b8" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <decisionNode Id="c331bc5a-4f7f-486a-b6df-7a7609a012d3" name="Check students" isLeaf="false">
+            <elementDefinition Id="cbaf3d10-5b61-4090-a7a3-5c9f2ef6a737" />
+            <flowNodeTargets>
+              <controlFlow Id="e79defed-003d-416a-9140-61e962901d03" isLeaf="false">
+                <opaqueActionMoniker Id="58a72c2f-3817-415b-b75b-39625f2c5e35" LastKnownName="Add students" />
+                <elementDefinition Id="06a38bdb-704f-40ae-9185-b2c0edb409b2" />
+              </controlFlow>
+              <controlFlow Id="f5c5ebf9-e1f7-4cf1-9288-84d339bc5c9c" isLeaf="false">
+                <opaqueActionMoniker Id="ea14042b-0a42-4807-a350-5044684954ca" LastKnownName="Show list" />
+                <elementDefinition Id="31e4fde5-0f89-4111-a443-a50a5a00e079" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction Id="ea14042b-0a42-4807-a350-5044684954ca" name="Show list" isLeaf="false">
+            <elementDefinition Id="ccdbb1f0-4a28-44ff-86c1-d7c1fdd00a5d" />
+            <flowNodeTargets>
+              <controlFlow Id="f2ca5d29-6d57-4ce8-a815-229d87b5a9af" isLeaf="false">
+                <opaqueActionMoniker Id="23e3a636-47ef-4abe-9338-e3713f7ee583" LastKnownName="Start new week" />
+                <elementDefinition Id="0edf3b75-9442-4cac-b4f3-4144f5d46f43" />
+              </controlFlow>
+              <controlFlow Id="a2345924-9157-4ba0-97eb-dcbb52eb4d72" isLeaf="false">
+                <activityFinalNodeMoniker Id="da2ee5a5-6b9c-421f-bb6b-5234f955fd61" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="19f1491a-dae8-4291-958a-edb015d0289f" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="58a72c2f-3817-415b-b75b-39625f2c5e35" name="Add students" isLeaf="false">
+            <elementDefinition Id="c34c260c-6f38-4c02-94cf-18e3272b89b8" />
+            <flowNodeTargets>
+              <controlFlow Id="61eeb033-e0ff-45d6-8308-8db66bd6a33b" isLeaf="false">
+                <opaqueActionMoniker Id="ea14042b-0a42-4807-a350-5044684954ca" LastKnownName="Show list" />
+                <elementDefinition Id="5ea2758b-6cdb-4bf1-b571-f4bcd6f06ae7" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="23e3a636-47ef-4abe-9338-e3713f7ee583" name="Start new week" isLeaf="false">
+            <elementDefinition Id="96a58138-07ed-4dc7-b433-e272b5b1a30d" />
+            <flowNodeTargets>
+              <controlFlow Id="d412f057-43de-4034-ab36-ed048e9a78d4" isLeaf="false">
+                <opaqueActionMoniker Id="ea14042b-0a42-4807-a350-5044684954ca" LastKnownName="Show list" />
+                <elementDefinition Id="000dd862-cb72-449c-bf0c-50619f7db037" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode Id="da2ee5a5-6b9c-421f-bb6b-5234f955fd61" name="ActivityFinal1" isLeaf="false">
+            <elementDefinition Id="d222c4d0-8e56-4062-a125-3e1ed735d290" />
+          </activityFinalNode>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="7777e621-8bc3-479a-a796-5573c3910caa" name="AttendanceList.Modeling">
+    <elementDefinition Id="f6b0ecf0-6cb1-4980-a834-69409b3b7434" />
+  </package>
+</activityRootModel>
