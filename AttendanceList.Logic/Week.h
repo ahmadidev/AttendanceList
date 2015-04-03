@@ -1,10 +1,10 @@
 #pragma once
 
-#include "Student.h"
-
 #include <iostream>
 #include <string>
 #include <vector>
+
+#include "Student.h"
 
 using namespace std;
 
@@ -13,7 +13,8 @@ class Week
 public:
 	int Number;
 	vector<Student> AbsentStudents;
-	const int TotalWeeks = 16;
+	static const int TotalWeeks = 16;
+	bool IsStudentAbsent(Student student);
 
 	static void AddWeek(Week week);
 	static vector<Week> GetWeeks();

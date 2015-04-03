@@ -15,18 +15,18 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Student.h">
+    <ClInclude Include="Week.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Week.h">
+    <ClInclude Include="Student.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Student.cpp">
+    <ClCompile Include="Week.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Week.cpp">
+    <ClCompile Include="Student.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

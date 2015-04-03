@@ -1,33 +1,36 @@
-#include <iostream>
+#include "MainView.h"
 
-#include "BaseView.h"
 #include "Student.h"
-#include "InputHelper.cpp"
-#include "AddingStudentsView.cpp"
+#include "InputHelper.h"
+#include "AddingStudentsView.h"
+#include "StudentsListView.h"
 
 using namespace std;
 
-class MainView : BaseView
+MainView::MainView() : BaseView("Home")
+{}
+
+void MainView::Start()
 {
-public:
-	MainView() : BaseView("Home")
-	{}
-
-	void Start()
+	if (Student::HasStudent())
 	{
-		if (Student::HasStudent())
-		{
-		}
-		else
-		{
-			cout << "Welcome,\n"
-				<< "It seems you haven't added your students yet.\n"
-				<< "Press Enter to start adding students...";
-
-			InputHelper::WaitForEnter();
-
-			AddingStudentsView view;
-			view.Start();
-		}
+		StudentsListView view;
+		view.Start();
 	}
-};
+	else
+	{
+		cout << "Welcome,\n"
+			<< "It seems you haven't added your students yet.\n"
+			<< "Press Enter to start adding students...";
+
+		InputHelper::WaitForEnter();
+
+		AddingStudentsView view;
+		view.Start();
+	}
+}
+
+void MainView::Exit()
+{
+	//any actions before exit?
+}

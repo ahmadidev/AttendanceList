@@ -1,18 +1,14 @@
-#include <iostream>
-#include <string>
+#include "StringHelper.h"
+
 #include <algorithm>
 
 using namespace std;
 
-class StringHelper
+string StringHelper::ToLower(string input)
 {
-public:
-	static string ToLower(string input)
-	{
-		string ret = input;
+	string ret = input;
 
-		std::transform(ret.begin(), ret.end(), ret.begin(), ::tolower);
+	std::transform(ret.begin(), ret.end(), ret.begin(), ::tolower);
 
-		return ret;
-	}
-};
+	return ret;
+}

@@ -1,5 +1,21 @@
 #include "Student.h"
 
+Student::Student()
+{
+	MidScore = -1;
+	FinalScore = -1;
+}
+
+string Student::getStrMidScore()
+{
+	return MidScore == -1 ? "" : to_string(MidScore);
+}
+
+string Student::getStrFinalScore()
+{
+	return FinalScore == -1 ? "" : to_string(FinalScore);
+}
+
 void Student::AddStudent(Student student)
 {
 	//cout << "Not implemented Student::AddStudent" << endl;
@@ -9,7 +25,7 @@ vector<Student> Student::GetStudents()
 {
 	vector<Student> students;
 
-	for (size_t i = 62; i < 70; i++)
+	for (size_t i = 68; i < 75; i++)
 	{
 		Student s;
 		s.FirstName = (char)i;

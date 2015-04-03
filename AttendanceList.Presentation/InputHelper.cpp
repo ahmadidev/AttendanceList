@@ -1,14 +1,10 @@
-#pragma once
+#include "InputHelper.h"
 
 #include <iostream>
 
 using namespace std;
 
-class InputHelper
+void InputHelper::WaitForEnter()
 {
-public:
-	static void WaitForEnter()
-	{
-		cin.get();
-	}
-};
+	cin.get();
+}

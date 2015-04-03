@@ -5,8 +5,8 @@
 
 using namespace std;
 
-class BaseView
+class StringHelper
 {
 public:
-	BaseView(string header);
+	static string ToLower(string input);
 };

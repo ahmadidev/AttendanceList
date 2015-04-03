@@ -92,7 +92,9 @@
     <ClCompile Include="InputHelper.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="MainView.cpp" />
+    <ClCompile Include="PrintHelper.cpp" />
     <ClCompile Include="StringHelper.cpp" />
+    <ClCompile Include="StudentsListView.cpp" />
     <ClCompile Include="WindowHelper.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -101,7 +103,15 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="AddingStudentsView.h" />
     <ClInclude Include="BaseView.h" />
+    <ClInclude Include="CheckingAttendanceView.h" />
+    <ClInclude Include="InputHelper.h" />
+    <ClInclude Include="MainView.h" />
+    <ClInclude Include="PrintHelper.h" />
+    <ClInclude Include="StringHelper.h" />
+    <ClInclude Include="StudentsListView.h" />
+    <ClInclude Include="WindowHelper.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

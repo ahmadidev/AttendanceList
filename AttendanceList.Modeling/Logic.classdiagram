@@ -198,6 +198,12 @@
               </literalInteger>
             </defaultValue>
           </property>
+          <property Id="1dd4d326-5c40-400a-8a7c-63898149661b" name="IsStudentAbsent()" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="15184b71-a402-4012-9f54-035279f61d08" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="d5b0a15e-2a05-452f-9f6d-9d4e14ceb30f" LastKnownName="Boolean" />
+            </type_NamedElement>
+          </property>
         </ownedAttributesInternal>
         <ownedOperationsInternal>
           <operation Id="b240bae5-8b98-40a4-927a-2bd246cb6c2f" name="GetWeeks" isLeaf="false" isStatic="true" isAbstract="false" concurrency="Sequential" isQuery="false">
