@@ -12,11 +12,6 @@ public:
 	vector<Week> GetWeeks();
 
 private:
-	List();
-
 	static List* instance;
-
-	vector<Student> students;
-	vector<Week> weeks;
 };
 

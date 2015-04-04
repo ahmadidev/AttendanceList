@@ -11,6 +11,8 @@ Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "AttendanceList.Modeling", "
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AttendanceList.Data", "AttendanceList.Data\AttendanceList.Data.vcxproj", "{414C42C1-F1FA-4DBF-AFC0-AC2CC637B50B}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AttendanceList.Helper", "AttendanceList.Helper\AttendanceList.Helper.vcxproj", "{15B1FA0B-D8A4-4A6A-8AF3-AEF6C847935D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -61,6 +63,16 @@ Global
 		{414C42C1-F1FA-4DBF-AFC0-AC2CC637B50B}.Release|Mixed Platforms.Build.0 = Release|Win32
 		{414C42C1-F1FA-4DBF-AFC0-AC2CC637B50B}.Release|Win32.ActiveCfg = Release|Win32
 		{414C42C1-F1FA-4DBF-AFC0-AC2CC637B50B}.Release|Win32.Build.0 = Release|Win32
+		{15B1FA0B-D8A4-4A6A-8AF3-AEF6C847935D}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{15B1FA0B-D8A4-4A6A-8AF3-AEF6C847935D}.Debug|Mixed Platforms.ActiveCfg = Debug|Win32
+		{15B1FA0B-D8A4-4A6A-8AF3-AEF6C847935D}.Debug|Mixed Platforms.Build.0 = Debug|Win32
+		{15B1FA0B-D8A4-4A6A-8AF3-AEF6C847935D}.Debug|Win32.ActiveCfg = Debug|Win32
+		{15B1FA0B-D8A4-4A6A-8AF3-AEF6C847935D}.Debug|Win32.Build.0 = Debug|Win32
+		{15B1FA0B-D8A4-4A6A-8AF3-AEF6C847935D}.Release|Any CPU.ActiveCfg = Release|Win32
+		{15B1FA0B-D8A4-4A6A-8AF3-AEF6C847935D}.Release|Mixed Platforms.ActiveCfg = Release|Win32
+		{15B1FA0B-D8A4-4A6A-8AF3-AEF6C847935D}.Release|Mixed Platforms.Build.0 = Release|Win32
+		{15B1FA0B-D8A4-4A6A-8AF3-AEF6C847935D}.Release|Win32.ActiveCfg = Release|Win32
+		{15B1FA0B-D8A4-4A6A-8AF3-AEF6C847935D}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

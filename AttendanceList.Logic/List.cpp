@@ -10,18 +10,12 @@ List* List::Instance()
 	return instance;
 }
 
-List::List()
-{
-	students = Student::GetStudents();
-	weeks = Week::GetWeeks();
-}
-
 vector<Student> List::GetStudents()
 {
-	return students;
+	return Student::GetStudents();
 }
 
 vector<Week> List::GetWeeks()
 {
-	return weeks;
+	return Week::GetWeeks();
 }

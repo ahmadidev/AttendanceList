@@ -1,6 +1,12 @@
 #include "Week.h"
 
 #include "DataProvider.h"
+#include "List.h"
+
+Week::Week()
+{
+	AbsentStudents = vector<Student>();
+}
 
 bool Week::IsStudentAbsent(Student student)
 {

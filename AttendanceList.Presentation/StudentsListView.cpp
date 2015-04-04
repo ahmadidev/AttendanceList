@@ -62,8 +62,8 @@ void StudentsListView::PrintSutdents()
 			cout << "|" << string(4, ' ');
 		}
 
-		cout << "| " << left << setw(4) << student.getStrMidScore() << " ";
-		cout << "| " << left << setw(4) << student.getStrFinalScore() << " ";
+		cout << "| " << left << setw(4) << student.GetStrMidScore() << " ";
+		cout << "| " << left << setw(4) << student.GetStrFinalScore() << " ";
 
 		cout << endl;
 		PrintHelper::PrintLine('-');

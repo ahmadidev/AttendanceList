@@ -11,6 +11,7 @@ using namespace std;
 class Week
 {
 public:
+	Week();
 	int Number;
 	vector<Student> AbsentStudents;
 	static const int TotalWeeks = 16;

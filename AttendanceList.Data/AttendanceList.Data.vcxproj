@@ -18,6 +18,11 @@
     <ClCompile Include="DataProvider.cpp" />
     <ClCompile Include="FileDataProvider.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AttendanceList.Helper\AttendanceList.Helper.vcxproj">
+      <Project>{15b1fa0b-d8a4-4a6a-8af3-aef6c847935d}</Project>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{414C42C1-F1FA-4DBF-AFC0-AC2CC637B50B}</ProjectGuid>
     <SccProjectName>
@@ -63,7 +68,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(SolutionDir)AttendanceList.Logic;</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)AttendanceList.Logic;$(SolutionDir)AttendanceList.Helper</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>

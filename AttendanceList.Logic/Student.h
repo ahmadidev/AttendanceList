@@ -17,8 +17,11 @@ public:
 	float MidScore;
 	float FinalScore;
 
-	string getStrMidScore();
-	string getStrFinalScore();
+	string GetStrMidScore();
+	string GetStrFinalScore();
+
+	void SetMidScore(string score);
+	void SetFinalScore(string score);
 
 	static void AddStudent(Student student);
 	static vector<Student> GetStudents();
