@@ -17,7 +17,7 @@ int main()
 	Student s;
 	s.FirstName = "Erfan";
 	s.LastName = "Ahmadi";
-	s.Id = "930";
+	s.Id = "931";
 
 	Student::AddStudent(s);
 
