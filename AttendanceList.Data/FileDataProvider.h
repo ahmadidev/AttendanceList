@@ -2,6 +2,8 @@
 
 #include "DataProvider.h"
 
+#include <fstream>
+
 class FileDataProvider : public DataProvider
 {
 public:
@@ -11,4 +13,7 @@ public:
 	void AddWeek(Week week) override;
 	vector<Student> GetStudents() override;
 	vector<Week> GetWeeks() override;
+
+private:
+	ofstream students_file;
 };
