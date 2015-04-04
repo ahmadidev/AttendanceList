@@ -71,7 +71,7 @@ void StudentsListView::PrintSutdents()
 
 void StudentsListView::PrintFooter()
 {
-	cout << "Press 'c' to check students attendance this week.\n"
+	cout << "Press 'c' to check students attendance of #" << (Week::GetLastWeekNumber() + 1) << " week.\n"
 		<< "Press 'q' to exit.";
 
 	while (true)

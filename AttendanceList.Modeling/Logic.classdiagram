@@ -159,6 +159,55 @@
     <logicalClassDesignerModelHasTypes>
       <class Id="44d12caf-de64-4ab1-afb9-2cad3fb2bf75" name="List" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="930871ff-339f-49ca-91ce-e65fbcce1309" />
+        <ownedAttributesInternal>
+          <property Id="308870dc-fb56-4b6a-8c73-dcf4cc56738b" name="Weeks" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <lowerValueInternal>
+              <literalString Id="18a13492-4066-4441-a840-820b0b3469ac" name="Lower" value="*">
+                <elementDefinition Id="9ec008ba-6c28-4347-8188-c583e5a949d9" />
+              </literalString>
+            </lowerValueInternal>
+            <upperValueInternal>
+              <literalString Id="449822ba-64fb-49bd-a95e-a9702d975867" name="Upper" value="*">
+                <elementDefinition Id="7e16d108-613d-4e0c-994f-8cacf10775af" />
+              </literalString>
+            </upperValueInternal>
+            <elementDefinition Id="2556abbf-db6a-4ae5-9027-758ca0f9f0ff" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="45e5bc06-4e23-4d2f-9bb6-285f944cfd72" LastKnownName="Week" />
+            </type_NamedElement>
+          </property>
+          <property Id="d29cffb4-be60-4601-b6d1-7e2afd7961a3" name="Students" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <lowerValueInternal>
+              <literalString Id="2d460dfd-6ef4-4635-934e-bf895c3a72c4" name="Lower" value="*">
+                <elementDefinition Id="26af8feb-ee72-41fe-bc58-68756e292fec" />
+              </literalString>
+            </lowerValueInternal>
+            <upperValueInternal>
+              <literalString Id="53e0ad80-7695-4428-8bc2-6386ae271f45" name="Upper" value="*">
+                <elementDefinition Id="749ee034-afe2-4b39-b4f6-576d0ad0197e" />
+              </literalString>
+            </upperValueInternal>
+            <elementDefinition Id="fe9494ea-b355-405e-8f44-1ccadc63397b" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="e225a64e-53db-4fc8-b9cc-be3dd52aaac4" LastKnownName="Student" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="14703992-42ad-45e0-bb0a-c74af59aaf1c" name="Instance" isLeaf="false" isStatic="true" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="48aeff2e-b9bb-4128-ab86-90e1f6f9c827" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="91e777a4-2ebb-404c-a786-c92aa26eb354" direction="Return">
+                  <elementDefinition Id="4f6d3185-a76a-418d-b1ee-1b64e7a6278e" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="993555d5-0330-4254-adb2-d5b0d773426d" LastKnownName="List" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
@@ -286,6 +335,11 @@
     <packageHasNamedElement>
       <referencedType Id="763471e9-ef1c-484c-8288-61d7823a4e35" name="Integer" isAbstract="false" isLeaf="false" cachedFullName="Integer">
         <elementDefinition Id="220a3521-e091-4221-bae9-3ef9018e845c" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="993555d5-0330-4254-adb2-d5b0d773426d" name="List" isAbstract="false" isLeaf="false" cachedFullName="AttendanceList.Modeling::List">
+        <elementDefinition Id="930871ff-339f-49ca-91ce-e65fbcce1309" />
       </referencedType>
     </packageHasNamedElement>
   </packagedElements>
