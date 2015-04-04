@@ -14,7 +14,6 @@ public:
 private:
 	List();
 
-	int num;
 	static List *instance;
 
 	vector<Student> students;

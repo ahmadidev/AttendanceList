@@ -543,6 +543,7 @@
           <property
             Id="2556abbf-db6a-4ae5-9027-758ca0f9f0ff"
             name="Weeks"
+            visibility="Private"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -573,6 +574,7 @@
           <property
             Id="fe9494ea-b355-405e-8f44-1ccadc63397b"
             name="Students"
+            visibility="Private"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -600,6 +602,25 @@
                 LastKnownLocation="AttendanceList.Modeling.uml" />
             </type_NamedElement>
           </property>
+          <property
+            Id="60c3a7ab-dce9-4489-b1cf-540856df8a4b"
+            name="Instance"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <classMoniker
+                Id="930871ff-339f-49ca-91ce-e65fbcce1309"
+                LastKnownName="List"
+                LastKnownLocation="AttendanceList.Modeling.uml" />
+            </type_NamedElement>
+          </property>
         </ownedAttributesInternal>
         <ownedOperationsInternal>
           <operation
@@ -615,6 +636,103 @@
                 <parameter
                   Id="4f6d3185-a76a-418d-b1ee-1b64e7a6278e"
                   direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="930871ff-339f-49ca-91ce-e65fbcce1309"
+                      LastKnownName="List"
+                      LastKnownLocation="AttendanceList.Modeling.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="4bcd59d6-beed-49db-993f-bcaca6a14ecf"
+            name="GetStudents"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="bb9d7cb7-f196-4152-afac-fdb3db3181c3"
+                  direction="Return"
+                  isUnique="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="e5d55b8d-3901-4fec-a357-a4174f53aba8"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="6e3b683b-d8a7-4dc8-b3eb-8667b882d58d"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="5aae071c-3ecd-46d6-94c2-208e0ea7c0ae"
+                      LastKnownName="Student"
+                      LastKnownLocation="AttendanceList.Modeling.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="d20f9259-a15f-4455-9c8f-6c7ab3a42ddb"
+            name="GetWeeks"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="a0cda107-67f2-4388-9476-da7733e267d1"
+                  direction="Return"
+                  isUnique="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="ba90887b-16e1-4246-a447-78baf7197cf8"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="e2b782eb-9873-4480-a2c6-af5e1ca96c8f"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="aee190f8-8b63-48ff-b964-49fc2e5f33cb"
+                      LastKnownName="Week"
+                      LastKnownLocation="AttendanceList.Modeling.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="9267326e-4cd1-4a6f-9336-6e8f4008b17b"
+            name="List"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="8861de4a-9f5d-4f91-ba40-56d659493c1a"
+                  direction="Return"
+                  isUnique="false">
                   <type_NamedElement>
                     <classMoniker
                       Id="930871ff-339f-49ca-91ce-e65fbcce1309"

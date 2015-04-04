@@ -160,7 +160,7 @@
       <class Id="44d12caf-de64-4ab1-afb9-2cad3fb2bf75" name="List" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="930871ff-339f-49ca-91ce-e65fbcce1309" />
         <ownedAttributesInternal>
-          <property Id="308870dc-fb56-4b6a-8c73-dcf4cc56738b" name="Weeks" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+          <property Id="308870dc-fb56-4b6a-8c73-dcf4cc56738b" name="Weeks" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <lowerValueInternal>
               <literalString Id="18a13492-4066-4441-a840-820b0b3469ac" name="Lower" value="*">
                 <elementDefinition Id="9ec008ba-6c28-4347-8188-c583e5a949d9" />
@@ -173,10 +173,10 @@
             </upperValueInternal>
             <elementDefinition Id="2556abbf-db6a-4ae5-9027-758ca0f9f0ff" />
             <type_NamedElement>
-              <referencedTypeMoniker Id="45e5bc06-4e23-4d2f-9bb6-285f944cfd72" LastKnownName="Week" />
+              <referencedTypeMoniker Id="f446d7a7-a313-4df5-a994-14a1115fa6d1" LastKnownName="Week" />
             </type_NamedElement>
           </property>
-          <property Id="d29cffb4-be60-4601-b6d1-7e2afd7961a3" name="Students" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+          <property Id="d29cffb4-be60-4601-b6d1-7e2afd7961a3" name="Students" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <lowerValueInternal>
               <literalString Id="2d460dfd-6ef4-4635-934e-bf895c3a72c4" name="Lower" value="*">
                 <elementDefinition Id="26af8feb-ee72-41fe-bc58-68756e292fec" />
@@ -189,7 +189,13 @@
             </upperValueInternal>
             <elementDefinition Id="fe9494ea-b355-405e-8f44-1ccadc63397b" />
             <type_NamedElement>
-              <referencedTypeMoniker Id="e225a64e-53db-4fc8-b9cc-be3dd52aaac4" LastKnownName="Student" />
+              <referencedTypeMoniker Id="42c64dd6-c36f-4da6-9fac-35f8a80b50e2" LastKnownName="Student" />
+            </type_NamedElement>
+          </property>
+          <property Id="fce83838-ed9f-4946-a4eb-aadb7b30f7ad" name="Instance" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="60c3a7ab-dce9-4489-b1cf-540856df8a4b" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="993555d5-0330-4254-adb2-d5b0d773426d" LastKnownName="List" />
             </type_NamedElement>
           </property>
         </ownedAttributesInternal>
@@ -200,6 +206,65 @@
               <operationHasOwnedParameters>
                 <parameter Id="91e777a4-2ebb-404c-a786-c92aa26eb354" direction="Return">
                   <elementDefinition Id="4f6d3185-a76a-418d-b1ee-1b64e7a6278e" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="993555d5-0330-4254-adb2-d5b0d773426d" LastKnownName="List" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="735f20e0-712c-49e3-a879-b5a6eb8283da" name="GetStudents" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="4bcd59d6-beed-49db-993f-bcaca6a14ecf" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="949efa92-ae85-4187-b526-21155c103c03" direction="Return" isUnique="false">
+                  <lowerValueInternal>
+                    <literalString Id="b0ae6f6f-477e-4915-9646-ff9359f01647" name="Lower" value="*">
+                      <elementDefinition Id="e5d55b8d-3901-4fec-a357-a4174f53aba8" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="1ab32651-8475-4def-9af7-c9d1b41866e0" name="Upper" value="*">
+                      <elementDefinition Id="6e3b683b-d8a7-4dc8-b3eb-8667b882d58d" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="bb9d7cb7-f196-4152-afac-fdb3db3181c3" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="e225a64e-53db-4fc8-b9cc-be3dd52aaac4" LastKnownName="Student" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="e3df518c-96f5-40e3-a66c-177e2d9f1d20" name="GetWeeks" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="d20f9259-a15f-4455-9c8f-6c7ab3a42ddb" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="5f25156e-9d46-49d8-825b-877a4c494fac" direction="Return" isUnique="false">
+                  <lowerValueInternal>
+                    <literalString Id="7a35c4c0-c2ac-498c-97b6-51d1ea0e8e6d" name="Lower" value="*">
+                      <elementDefinition Id="ba90887b-16e1-4246-a447-78baf7197cf8" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="1e88014b-e6ae-41de-906b-dc7766fab37a" name="Upper" value="*">
+                      <elementDefinition Id="e2b782eb-9873-4480-a2c6-af5e1ca96c8f" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="a0cda107-67f2-4388-9476-da7733e267d1" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="45e5bc06-4e23-4d2f-9bb6-285f944cfd72" LastKnownName="Week" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="87400f6e-8fe9-4bd8-8c51-dd000f3f1bde" name="List" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="9267326e-4cd1-4a6f-9336-6e8f4008b17b" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="4f4931c7-4f2c-433e-94d5-c93d312e51c6" direction="Return" isUnique="false">
+                  <elementDefinition Id="8861de4a-9f5d-4f91-ba40-56d659493c1a" />
                   <type_NamedElement>
                     <referencedTypeMoniker Id="993555d5-0330-4254-adb2-d5b0d773426d" LastKnownName="List" />
                   </type_NamedElement>
@@ -340,6 +405,16 @@
     <packageHasNamedElement>
       <referencedType Id="993555d5-0330-4254-adb2-d5b0d773426d" name="List" isAbstract="false" isLeaf="false" cachedFullName="AttendanceList.Modeling::List">
         <elementDefinition Id="930871ff-339f-49ca-91ce-e65fbcce1309" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="f446d7a7-a313-4df5-a994-14a1115fa6d1" name="Week" isAbstract="false" isLeaf="false" cachedFullName="AttendanceList.Modeling::Week">
+        <elementDefinition Id="aee190f8-8b63-48ff-b964-49fc2e5f33cb" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="42c64dd6-c36f-4da6-9fac-35f8a80b50e2" name="Student" isAbstract="false" isLeaf="false" cachedFullName="AttendanceList.Modeling::Student">
+        <elementDefinition Id="5aae071c-3ecd-46d6-94c2-208e0ea7c0ae" />
       </referencedType>
     </packageHasNamedElement>
   </packagedElements>
