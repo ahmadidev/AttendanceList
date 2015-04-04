@@ -14,15 +14,6 @@ int main()
 {
 	WindowHelper::Resize(30, 120);
 
-	Student s;
-	s.FirstName = "Erfan";
-	s.LastName = "Ahmadi";
-	s.Id = "931";
-
-	Student::AddStudent(s);
-
-	return 0;
-
 	MainView view;
 	view.Start();
 
