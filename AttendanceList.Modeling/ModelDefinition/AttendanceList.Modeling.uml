@@ -907,7 +907,7 @@
           </operation>
           <operation
             Id="736808ee-6c41-4972-815e-8ab8142b8b18"
-            name="GetNextWeekNumber"
+            name="GetLastWeekNumber"
             isLeaf="false"
             isStatic="true"
             isAbstract="false"
@@ -917,7 +917,8 @@
               <operationHasOwnedParameters>
                 <parameter
                   Id="c50048f4-cd1a-47e1-9e15-4de40498d1b7"
-                  direction="Return">
+                  direction="Return"
+                  isUnique="false">
                   <type_NamedElement>
                     <primitiveTypeMoniker
                       Id="220a3521-e091-4221-bae9-3ef9018e845c"
@@ -929,6 +930,153 @@
             </ownedParameters>
           </operation>
         </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="76b94a83-e9c1-458d-9495-c7d6cf936944"
+        name="DataProvider"
+        isAbstract="true"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="8850e5cf-48a8-4a93-ada3-e4cd70ba3736"
+            name="instance"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <classMoniker
+                Id="76b94a83-e9c1-458d-9495-c7d6cf936944"
+                LastKnownName="DataProvider"
+                LastKnownLocation="AttendanceList.Modeling.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="2b2d2bf8-835b-4f7d-b3e0-14ed6a26d10d"
+            name="Instance : DataProvider"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="d09cd938-f731-4ec4-bb61-2a9970f936ae"
+            name="GetStudents"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="be092e45-6caa-4966-a831-44de3af32d1e"
+                  direction="Return"
+                  isUnique="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="32b3156f-2217-4d2f-a128-4e1f160d6e7d"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="9b8e8f80-44b0-4476-b5a8-9629a7d5d2b1"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="5aae071c-3ecd-46d6-94c2-208e0ea7c0ae"
+                      LastKnownName="Student"
+                      LastKnownLocation="AttendanceList.Modeling.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="f6ee5f7a-c74a-4f0f-a85a-2d1bc2bd6fce"
+            name="GetWeeks"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="dd3c80f0-a7bd-40b9-85a5-100cde1e9089"
+                  direction="Return"
+                  isUnique="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="bb48abe8-3105-4d64-a6de-56e405bb827c"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="aee00cfe-f6f7-4bea-8bb9-d601234a8f8d"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="aee190f8-8b63-48ff-b964-49fc2e5f33cb"
+                      LastKnownName="Week"
+                      LastKnownLocation="AttendanceList.Modeling.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="8d7eb7e0-3c15-45d9-bd25-a3f50c3af8e8"
+            name="AddStudent"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="779b6060-34f4-4fcd-b9e0-9d4f3d0abea7"
+            name="AddWeek"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="a3989a98-14c6-446d-9393-66997392eeb7"
+        name="FileDataProvider"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="e4c55265-b9e8-4988-83cf-2586f013e604"
+            isSubstitutable="false">
+            <classMoniker
+              Id="76b94a83-e9c1-458d-9495-c7d6cf936944"
+              LastKnownName="DataProvider"
+              LastKnownLocation="AttendanceList.Modeling.uml" />
+          </generalization>
+        </generalsInternal>
       </class>
     </packageHasNamedElement>
   </packagedElements>

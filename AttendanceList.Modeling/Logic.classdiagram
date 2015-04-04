@@ -356,11 +356,11 @@
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
-          <operation Id="031606ef-ecee-447b-b48c-ede9a1b901dd" name="GetNextWeekNumber" isLeaf="false" isStatic="true" isAbstract="false" concurrency="Sequential" isQuery="false">
+          <operation Id="031606ef-ecee-447b-b48c-ede9a1b901dd" name="GetLastWeekNumber" isLeaf="false" isStatic="true" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="736808ee-6c41-4972-815e-8ab8142b8b18" />
             <ownedParameters>
               <operationHasOwnedParameters>
-                <parameter Id="b8608f35-2721-4a97-b695-bc79bb7247b5" direction="Return">
+                <parameter Id="b8608f35-2721-4a97-b695-bc79bb7247b5" direction="Return" isUnique="false">
                   <elementDefinition Id="c50048f4-cd1a-47e1-9e15-4de40498d1b7" />
                   <type_NamedElement>
                     <referencedTypeMoniker Id="763471e9-ef1c-484c-8288-61d7823a4e35" LastKnownName="Integer" />

@@ -56,6 +56,7 @@
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <AdditionalIncludeDirectories>$(SolutionDir)AttendanceList.Data</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -88,6 +89,11 @@
     <ClCompile Include="List.cpp" />
     <ClCompile Include="Student.cpp" />
     <ClCompile Include="Week.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AttendanceList.Data\AttendanceList.Data.vcxproj">
+      <Project>{414c42c1-f1fa-4dbf-afc0-ac2cc637b50b}</Project>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

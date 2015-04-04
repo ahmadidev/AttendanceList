@@ -1,6 +1,6 @@
 #include "Week.h"
 
-#include "List.h"
+#include "DataProvider.h"
 
 bool Week::IsStudentAbsent(Student student)
 {
@@ -15,23 +15,15 @@ bool Week::IsStudentAbsent(Student student)
 
 void Week::AddWeek(Week week)
 {
-
+	DataProvider::Instance()->AddWeek(week);
 }
 
 vector<Week> Week::GetWeeks()
 {
-	vector<Week> weeks;
-
-	Week week;
-	week.Number = 1;
-	week.AbsentStudents = List::Instance()->GetStudents();
-
-	weeks.push_back(week);
-
-	return weeks;
+	return DataProvider::Instance()->GetWeeks();
 }
 
 int Week::GetLastWeekNumber()
 {
-	return 0;
+	return GetWeeks().size();
 }

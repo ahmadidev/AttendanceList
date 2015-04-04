@@ -10,6 +10,14 @@
       <Platform>Win32</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DataProvider.h" />
+    <ClInclude Include="FileDataProvider.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="DataProvider.cpp" />
+    <ClCompile Include="FileDataProvider.cpp" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{414C42C1-F1FA-4DBF-AFC0-AC2CC637B50B}</ProjectGuid>
     <SccProjectName>
@@ -55,6 +63,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)AttendanceList.Logic;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>

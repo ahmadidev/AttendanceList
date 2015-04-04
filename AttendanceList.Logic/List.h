@@ -14,7 +14,7 @@ public:
 private:
 	List();
 
-	static List *instance;
+	static List* instance;
 
 	vector<Student> students;
 	vector<Week> weeks;

@@ -1,5 +1,7 @@
 #include "Student.h"
 
+#include "DataProvider.h"
+
 Student::Student()
 {
 	MidScore = -1;
@@ -18,31 +20,15 @@ string Student::getStrFinalScore()
 
 void Student::AddStudent(Student student)
 {
-	//cout << "Not implemented Student::AddStudent" << endl;
+	DataProvider::Instance()->AddStudent(student);
 }
 
 vector<Student> Student::GetStudents()
 {
-	vector<Student> students;
-
-	for (size_t i = 68; i < 75; i++)
-	{
-		Student s;
-		s.FirstName = (char)i;
-		s.LastName = (char)i;
-		s.Id = (char)i;
-
-		students.push_back(s);
-	}
-
-	//cout << "Not implemented Student::GetStudents" << endl;
-
-	return students;
+	return DataProvider::Instance()->GetStudents();
 }
 
 bool Student::HasStudent()
 {
-	//cout << "Not implemented Student::HasStudent" << endl;
-
-	return false;
+	return GetStudents().size() > 0;
 }
