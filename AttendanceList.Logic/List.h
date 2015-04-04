@@ -8,11 +8,12 @@ class List
 public:
 	static List* Instance();
 
-	List();
 	vector<Student> GetStudents();
 	vector<Week> GetWeeks();
 
 private:
+	List();
+
 	int num;
 	static List *instance;
 

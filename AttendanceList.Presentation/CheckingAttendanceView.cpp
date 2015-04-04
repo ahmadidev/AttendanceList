@@ -2,6 +2,7 @@
 
 #include <conio.h>
 
+#include "List.h"
 #include "Student.h"
 #include "InputHelper.h"
 #include "StringHelper.h"
@@ -25,7 +26,7 @@ void CheckingAttendanceView::CheckAttendance()
 	Week week;
 	week.Number = Week::GetLastWeekNumber() + 1;
 
-	vector<Student> students = Student::GetStudents();
+	vector<Student> students = List::Instance()->GetStudents();
 
 	for (Student student : students)
 	{

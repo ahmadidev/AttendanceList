@@ -3,6 +3,7 @@
 #include <iomanip>
 #include <conio.h>
 
+#include "List.h"
 #include "MainView.h"
 #include "CheckingAttendanceView.h"
 #include "InputHelper.h"
@@ -16,8 +17,10 @@ StudentsListView::StudentsListView() : BaseView("Home")
 
 void StudentsListView::Start()
 {
-	students = Student::GetStudents();
-	weeks = Week::GetWeeks();
+	List* list = List::Instance();
+
+	students = list->GetStudents();
+	weeks = list->GetWeeks();
 
 	PrintHeader();
 	PrintSutdents();

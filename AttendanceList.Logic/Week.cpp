@@ -1,5 +1,7 @@
 #include "Week.h"
 
+#include "List.h"
+
 bool Week::IsStudentAbsent(Student student)
 {
 	for (Student absent : this->AbsentStudents)
@@ -22,7 +24,7 @@ vector<Week> Week::GetWeeks()
 
 	Week week;
 	week.Number = 1;
-	week.AbsentStudents = Student::GetStudents();
+	week.AbsentStudents = List::Instance()->GetStudents();
 
 	weeks.push_back(week);
 
