@@ -16,7 +16,7 @@ CheckingAttendanceView::CheckingAttendanceView() : BaseView("Checking Students A
 void CheckingAttendanceView::Start()
 {
 	cout << "Attendance of #" << (Week::GetLastWeekNumber() + 1) << " week.\n"
-		<< "Press Enter to skip student, or Press X to mark student as absent.\n\n";
+		<< "Press X after absent students And just press Enter If he/she is present.\n\n";
 
 	CheckAttendance();
 }
@@ -47,14 +47,14 @@ void CheckingAttendanceView::Finish(Week week)
 {
 	Week::AddWeek(week);
 
-	cout << endl << "OK, we finished checking attendance of this week.\n";
+	cout << endl << "Okay , That's all.\n";
 
 	if (week.AbsentStudents.size() > 0)
 		cout << "We have " << week.AbsentStudents.size() << " absent students.\n";
 	else
 		cout << "We have no absent student. I feel weird!\n";
 
-	cout << "Press Enter to go back to Student list...";
+	cout << "To go back to student's list press Enter...";
 
 	InputHelper::WaitForEnter();
 
